@@ -5,6 +5,10 @@ const {
   removeContact,
 } = require("./contacts");
 
+const { program } = require("commander");
+
+program.options("-a, --action <type>").options("-i, -id <type>").options;
+
 const invokeAction = async ({ action, id, name, email, phone }) => {
   switch (action) {
     case "list":
